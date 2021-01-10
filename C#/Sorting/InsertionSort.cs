@@ -2,9 +2,6 @@ using System;
 
 public class Program {
 	
-    // Used to generate pseudo-random values. Should not be used for security-like programs.
-    private static readonly Random random = new Random();
-	
     public static void Main(string[] args) {
 	int[] arr = new int[6] {1, 5, -1, 23, 8, -25};
         
