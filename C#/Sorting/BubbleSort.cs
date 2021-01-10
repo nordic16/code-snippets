@@ -31,9 +31,9 @@ public class Program {
 		// If the current value is bigger than the next, swap their orders.
 		if (arr[j] > arr[j + 1]) {
 		    // Perform interchange			
-			int temp = arr[j + 1];
-			arr[j + 1] = arr[j];
-			arr[j] = temp;
+		    int temp = arr[j + 1];
+		    arr[j + 1] = arr[j];
+		    arr[j] = temp;
 		}
 	    }    
 	}
