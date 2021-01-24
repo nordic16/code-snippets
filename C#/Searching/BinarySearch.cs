@@ -15,6 +15,7 @@ class Program
             arr[i] = rand;
         }
 
+
         Array.Sort(arr);
 
         int index = BinarySearch(arr, 0, arr.Length - 1, 5);
