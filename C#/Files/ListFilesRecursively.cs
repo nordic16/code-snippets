@@ -11,7 +11,7 @@
     /// <summary>
     /// This function lists all files and subdirectories of a folder recursively.
     /// </summary>
-    /// <param name="path"></param>
+    /// <param name="path">The path for the parent folder.</param>
     private static void ListRecursively(string path)
     {
         try
