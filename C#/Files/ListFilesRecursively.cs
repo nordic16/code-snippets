@@ -1,7 +1,7 @@
 ﻿public static class ListDirectoryRecursively 
 {	
-	static void Main(string[] args) 
-	{
+    static void Main(string[] args) 
+    {
         string path = args[0];
 
         ListRecursively(path);
@@ -28,8 +28,8 @@
                     if (Directory.Exists(fPath)) 
                     {
                         ListRecursively(fPath);
-
                     }
+			
                     // If the currently selected element is a file, just print its path.
                     else
                     {
@@ -37,6 +37,7 @@
                     }
                 }
             }
+		
             // If the folder is empty, go back to its parent.
             else
             {
