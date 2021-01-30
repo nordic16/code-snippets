@@ -23,17 +23,12 @@
                 for (int i = 0; i < Directory.GetFileSystemEntries(path).Length; i++)
                 {
                     string fPath = Directory.GetFileSystemEntries(path)[i];
-
+		    Console.WriteLine(fPath);
+		    
                     // If the currently selected element is a folder, perform the same steps on it. 
                     if (Directory.Exists(fPath)) 
                     {
                         ListRecursively(fPath);
-                    }
-			
-                    // If the currently selected element is a file, just print its path.
-                    else
-                    {
-                        Console.WriteLine(fPath);
                     }
                 }
             }
