@@ -7,10 +7,10 @@ public static class DeleteFilesRecursively
         DelFilesRecursively(path);
     }
 	
-	/// <summary>
-  /// Deletes everything within path recursively.
-  /// </summary>
-  /// <param name="path">The parent folder. This folder won't be deleted.</param>
+    /// <summary>
+    /// Deletes everything within path recursively.
+    /// </summary>
+    /// <param name="path">The parent folder. This folder won't be deleted.</param>
     private static void DelFilesRecursively(string path)
     {
         //If the folder is not empty.
