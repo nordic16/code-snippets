@@ -4,15 +4,15 @@ if __name__ == "__main__":
 
     """No need for a base case, as when this function takes in an empty
        folder, the loop won't even execute."""
-    def ListDirRecursively(path: str, indentLevel: int = 0):
+    def ListDirRecursively(path: str):
         # For more info on os.walk(), check out 
         # https://docs.python.org/3/library/os.html#os.walk
         for root, dirs, files in os.walk(path):
             for fPath in files:
-                print(os.path.join(root, fPath))
+                print(f'{os.path.join(root, fPath)}')
 
             for dirPath in dirs:
-                ListDirRecursively(dirPath, indentLevel + 4)
+                ListDirRecursively(dirPath)
 
 
 
