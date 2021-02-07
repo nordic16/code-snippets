@@ -32,12 +32,6 @@
                     }
                 }
             }
-		
-            // If the folder is empty, go back to its parent.
-            else
-            {
-                return;
-            }
 			
         } catch (UnauthorizedAccessException)
         {
